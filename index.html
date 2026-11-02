@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake · Dafish</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">THE CLASSIC, REPLAYED</p><h1>Snake<span>.</span></h1></div><div class="scores"><div>SCORE<strong id="score">0</strong></div><div>BEST<strong id="best">0</strong></div></div></header>
+    <section class="board" aria-label="Snake game">
+      <canvas id="game" width="600" height="600" aria-label="Snake game board. Use arrow keys to move."></canvas>
+      <div id="overlay"><p class="eyebrow" id="status-label">READY WHEN YOU ARE</p><h2 id="message">A little hungry?</h2><p id="description">Collect the food. Keep growing.<br>Watch the walls — and your tail.</p><button id="start">Let’s play <span>↗</span></button></div>
+    </section>
+    <footer><p><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> to move <span>·</span> <kbd>Space</kbd> to pause</p><button id="restart" class="text-button">Restart ↻</button></footer>
+    <p id="announcement" class="sr-only" aria-live="polite"></p>
+  </main>
+</body>
+</html>
